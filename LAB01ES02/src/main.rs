@@ -1,14 +1,17 @@
-use std::fs;
+use std::{fs, time::SystemTime};
 
 enum Error{
-    Simple(SystemTime);
-    Complex(SystemTime, String); 
+    Simple(SystemTime),
+    Complex(SystemTime, String)
 }
 impl Error{
 
     
 }
+fn print_error(e: Error){
+    if()
 
+}
 fn main() {
     //read_to_string
     let s1=fs::read_to_string("../test.txt");
